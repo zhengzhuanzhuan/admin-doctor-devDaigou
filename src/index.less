@@ -1,0 +1,229 @@
+@import '~iview/src/styles/index.less';
+@import "assets/menuIcons/iconfont.css";
+
+@menu-dark-title: #1c2237;
+//#2d8cf0 // 统一成element的蓝色
+@menu-dark-active-bg: #409EFF;
+@primary-color: #409EFF;
+@link-color: #409EFF;
+@layout-sider-background: #001529;
+@black-font-color: #333333;
+@light-black-font-color: #666666;
+@border-color: #e8eaec;
+.main .logo-con{
+	padding-left: 4px;
+}
+.ivu-layout-sider{
+	background-color: @menu-dark-title;
+}
+.ivu-menu-dark .ivu-menu-item-active {
+	i,
+	span{
+		color: white;
+	}
+}
+.black {
+	color: @black-font-color;
+}
+.light-black {
+	color: @light-black-font-color;
+}
+.lf-layout {
+	overflow: auto;
+	&-left {
+		float: left;
+		display: inline-block;
+		width: 110px;
+		padding-right: 24px;
+		box-sizing: border-box;
+	}
+	&-right {
+		margin-left: 110px;
+	}
+}
+.with-border {
+	border: 1px solid @border-color !important;
+}
+.text-align-right{
+	text-align: right;
+}
+.text-align-center{
+	text-align: center;
+}
+.margin-left-8{
+	margin-left: 8px !important;
+}
+.margin-top-8{
+	margin-top: 8px;
+}
+.margin-right-8{
+	margin-right: 8px;
+}
+.margin-right-10{
+	margin-right: 10px;
+}
+.margin-bottom-8{
+	margin-bottom: 8px;
+}
+.margin-top-16 {
+	margin-top: 16px;
+}
+.margin-right-24{
+	margin-right: 24px;
+}
+.float-right{
+	float: right;
+}
+.pagination-container{
+	background-color: white;
+	overflow: auto;
+	padding: 16px;
+	text-align: right;
+	&-left{
+		float: left;
+	}
+	//.el-button{
+	//	height: 34px;
+	//}
+}
+// 通用搜索栏样式
+.common{
+	&_search{
+		padding: 0;
+		display: flex;
+		flex-wrap: wrap;
+		margin: 0;
+		padding-top: 10px;
+		border-radius: 5px;
+		background-color: #fff;
+		margin-bottom: 10px;
+		&_single{
+			list-style: none;
+			width: 25%;
+			min-width: 200px;
+			display: flex;
+			box-sizing: border-box;
+			padding: 0 10px;
+			margin-bottom: 10px;
+			>label{
+				width: 100px;
+				padding: 0;
+				flex-grow: 0;
+				flex-shrink: 0;
+				text-align: center;
+				box-sizing: border-box;
+				height: 34px;
+				line-height: 34px;
+				border-radius: 5px;
+				border-top-right-radius: 0;
+				border-bottom-right-radius: 0;
+				background-color: #f1f1f1;
+				color: #666;
+				font-size: 13px;
+				// padding-right: 10px;
+			}
+			&_time{
+				min-width: 510px;
+				width: 50%;
+			}
+			&_date{
+				min-width: 360px;
+				width: 50%;
+			}
+			&_longBtn{
+				min-width: 350px;
+			}
+			>div{
+				flex-grow: 1;
+			}
+			.el-input__inner,
+			.ivu-select-selection,
+			.ivu-input{
+				border-top-left-radius: 0;
+				border-bottom-left-radius: 0;
+			}
+			.el-input__inner{
+				height: 34px;
+			}
+			.el-input__icon{
+				line-height: 34px;
+			}
+			.ivu-input{
+				height: 34px;
+			}
+		}
+	}
+}
+.main{
+	.el-button{
+		padding: 1px 20px;
+		height: 34px;
+	}
+	.el-button--text{
+		padding: 1px 0;
+		height: 16px;
+	}
+	.common_search_single
+	{
+		.el-button{
+			height: 34px;
+		}
+	}
+}
+.record_dialog{
+	.el-tabs__item{
+		height: 100%;
+	}
+}
+ul,
+li{
+	list-style: none;
+}
+.ivu-menu-item .ivu-icon{
+	font-size: 16px;
+}
+.td-hover{
+	color: #409EFF;
+	cursor: pointer;
+}
+.red{
+	color: red!important;
+}
+.padding0-drawer{
+	.ivu-drawer-body {
+		padding: 0;
+	}
+}
+.btn-permission-hide{
+	display: none !important;
+}
+.el-message-box{
+	position: absolute;
+	right: 190px;
+	top: 25vh;
+}
+.ivu-input {
+	font-size: 14px;
+}
+
+
+	::-webkit-scrollbar {
+	width: 14px;
+	height: 14px;
+}
+::-webkit-scrollbar-track,
+::-webkit-scrollbar-thumb {
+	border-radius: 999px;
+	border: 5px solid transparent;
+}
+::-webkit-scrollbar-track {
+	box-shadow: 1px 1px 5px rgba(0,0,0,.2) inset;
+}
+::-webkit-scrollbar-thumb {
+	min-height: 20px;
+	background-clip: content-box;
+	box-shadow: 0 0 0 5px rgba(0,0,0,.2) inset;
+}
+::-webkit-scrollbar-corner {
+	background: transparent;
+}
